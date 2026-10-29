@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les Fous du Blocage</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #101014;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding: 65px 20px;
+  text-align: center;
+  background: linear-gradient(145deg,#231014,#101014);
+}
+.tag {
+  color: #ff5360;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(42px,7vw,76px);
+  margin: 20px 0;
+  letter-spacing: -2px;
+}
+h1 span { color: #ff5360; }
+.subtitle { color: #ccc; font-size: 21px; }
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 18px;
+}
+.stat {
+  background: #1b1b22;
+  border: 1px solid #35353c;
+  border-radius: 14px;
+  padding: 28px;
+}
+.stat strong {
+  display: block;
+  font-size: 43px;
+  color: #ff5360;
+  margin-bottom: 10px;
+}
+.stat small { color: #ccc; }
+section { margin-top: 65px; }
+h2 { font-size: 29px; }
+p { line-height: 1.8; color: #c4c4ce; }
+a { color: #ff7079; }
+footer {
+  border-top: 1px solid #35353c;
+  padding: 30px;
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="tag">Analyse indépendante de données publiques</div>
+  <h1>Les Fous <span>du Blocage</span></h1>
+  <div class="subtitle">
+    Ils font des listes. Nous regardons les chiffres.
+  </div>
+</header>
+
+<main>
+  <div class="stats">
+    <div class="stat">
+      <strong>446</strong>
+      <small>Comptes publiés</small>
+    </div>
+    <div class="stat">
+      <strong>462</strong>
+      <small>Profils recensés</small>
+    </div>
+    <div class="stat">
+      <strong>2 013</strong>
+      <small>Propositions comptabilisées</small>
+    </div>
+    <div class="stat">
+      <strong>16</strong>
+      <small>Profils supplémentaires</small>
+    </div>
+  </div>
+
+  <section>
+    <h2>Ils dressent des listes. Nous analysons les données.</h2>
+    <p>
+      Derrière les boutons de blocage se trouvent des données
+      publiquement accessibles : catalogues de profils,
+      compteurs de propositions et statistiques d'activité.
+    </p>
+    <p>
+      Cette première analyse repose sur une extraction
+      effectuée le 29 octobre 2026.
+    </p>
+  </section>
+
+  <section>
+    <h2>Sources et méthodologie</h2>
+    <p>
+      Les informations ont été collectées depuis les
+      fichiers JSON et les interfaces publiques du site
+      <a href="https://www.onbloquelextremedroite.fr/liste">
+        onbloquelextremedroite.fr
+      </a>.
+    </p>
+    <p>
+      Les nombres de propositions sont des compteurs
+      agrégés, et non des historiques individuels.
+      Les profils supplémentaires proviennent de la
+      collection technique stateProfiles.
+    </p>
+  </section>
+</main>
+
+<footer>
+  Les Fous du Blocage · Analyse du 29 octobre 2026
+  <p>Projet indépendant, sans affiliation au site étudié.</p>
+</footer>
+</body>
+</html>
